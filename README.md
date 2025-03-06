@@ -13,6 +13,7 @@
 - Arm32 (付费版支持)
 
 ## 功能支持
+
 - 入参修改
 - 支持所有的HybridClr版本
 - 静态、非静态函数的hook
@@ -20,7 +21,6 @@
 - Clr与本体桥接函数的修改(付费版支持)
 - virtual函数的hook(付费版支持)
 - 重载函数的hook(付费版支持)
-
 
 ## 使用方法
 
@@ -37,14 +37,15 @@
     //分别代表 dll名称, namespace, 类名, 方法名, 方法参数个数
     auto test = new TestObs("HotUpdate.dll", "HotUpdate", "Hello", "Run", 0);
     addObs(test);       
-- ```
+```
 
-  ```c++
-  Obs实现如下
+Obs实现如下
+
+```c++
   void TestObs::OnMethodEnter(Arg *args,uint32_t argCount) {
+  
   LOGI("Run Enter");
 }
-
 void TestObs::OnMethodExit(Arg *ret) {
 
     LOGI("test exit %i",ret->i32);
@@ -52,10 +53,12 @@ void TestObs::OnMethodExit(Arg *ret) {
     ret->i32=0;
     LOGI("test exit edit %i",ret->i32);
 }
-  ```
+```
+
 - 以上请都保证都在libil2cpp加载之前完成调用;否则工作异常
 
-## 联系方式: 
+## 联系方式:
+
 ### 295238641@qq.com  (请注明来意) qq: 29538641
 
 

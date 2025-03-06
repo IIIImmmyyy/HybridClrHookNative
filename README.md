@@ -42,9 +42,9 @@
 Obs实现如下
 
 ```c++
-  void TestObs::OnMethodEnter(Arg *args,uint32_t argCount) {
+void TestObs::OnMethodEnter(Arg *args,uint32_t argCount) {
   
-  LOGI("Run Enter");
+    LOGI("Run Enter");
 }
 void TestObs::OnMethodExit(Arg *ret) {
 

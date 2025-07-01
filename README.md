@@ -3,7 +3,8 @@
 - [README 中文](./README.md)
 - [README English](./README-en.md)
 ## 更好的HybridCLR 支持: 
-
+ [HybridCLR Dll注入](https://iiiimmmyyy.github.io/IIIImmmyyy/2025/07/01/UnityHybridCLR%E4%B8%8B%E7%9A%84Dll%E6%B3%A8%E5%85%A5/)
+ 
 ## 介绍
 
 这是一个HybridClr的Hook框架，用于处理Unity使用了HybridClr函数无法被hook的情况。

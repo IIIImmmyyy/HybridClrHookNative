@@ -2,6 +2,7 @@
 
 - [README 中文](./README.md)
 - [README English](./README-en.md)
+## 更好的HybridCLR 支持: 
 
 ## 介绍
 
@@ -40,7 +41,7 @@
     auto test = new TestObs("HotUpdate.dll", "HotUpdate", "Hello", "Run", 0);
     addObs(test);       
 ```
-
+[HybridCLR下Dll注入](https://iiiimmmyyy.github.io/IIIImmmyyy/2025/07/01/UnityHybridCLR%E4%B8%8B%E7%9A%84Dll%E6%B3%A8%E5%85%A5/)
 Obs实现如下
 
 ```c++
